@@ -33,6 +33,28 @@
       margin: 0 15px;
       text-decoration: none;
     }
+    .hero-section {
+      max-width: none;
+      margin: 0;
+      padding: 0;
+      height: 50vh;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: none;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      margin-bottom: 20px;
+    }
+    .hero-section .content {
+      max-width: 900px;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 40px 20px;
+      margin: auto;
+    }
     section {
       max-width: 900px;
       margin: auto;
@@ -108,48 +130,56 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="about">
-    <h2>About Bridge and Beam</h2>
-    <p>Bridge and Beam specializes in designing and installing smart home automation solutions. We help homeowners connect lighting, security, entertainment, and comfort systems into a seamless and easy-to-use experience.</p>
+  <section id="about" class="hero-section" style="background-image: url('./img/about-hero.svg');">
+    <div class="content">
+      <h2>About Bridge and Beam</h2>
+      <p>Bridge and Beam specializes in designing and installing smart home automation solutions. We help homeowners connect lighting, security, entertainment, and comfort systems into a seamless and easy-to-use experience.</p>
+    </div>
   </section>
 
-  <section id="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Smart lighting and shading control</li>
-      <li>Whole-home audio and video distribution</li>
-      <li>Home theater design and installation</li>
-      <li>Security and surveillance integration</li>
-      <li>Climate and energy management</li>
-    </ul>
+  <section id="services" class="hero-section" style="background-image: url('./img/services-hero.svg');">
+    <div class="content">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Smart lighting and shading control</li>
+        <li>Whole-home audio and video distribution</li>
+        <li>Home theater design and installation</li>
+        <li>Security and surveillance integration</li>
+        <li>Climate and energy management</li>
+      </ul>
+    </div>
   </section>
 
-  <section id="brands">
-    <h2>Technology Partners</h2>
-    <ul>
-      <li>Control4</li>
-      <li>Crestron</li>
-      <li>Sonos</li>
-      <li>Google Nest</li>
-      <li>Lutron</li>
-      <li>Ring</li>
-    </ul>
+  <section id="brands" class="hero-section" style="background-image: url('./img/brands-hero.svg');">
+    <div class="content">
+      <h2>Technology Partners</h2>
+      <ul>
+        <li>Control4</li>
+        <li>Crestron</li>
+        <li>Sonos</li>
+        <li>Google Nest</li>
+        <li>Lutron</li>
+        <li>Ring</li>
+      </ul>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Request a Consultation</h2>
-    <form>
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
+  <section id="contact" class="hero-section" style="background-image: url('./img/contact-hero.svg');">
+    <div class="content">
+      <h2>Request a Consultation</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
 
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
-      <button type="submit">Submit</button>
-    </form>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   </section>
 
   <footer>
