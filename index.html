@@ -3,23 +3,157 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bridge and Beam</title>
+  <title>Bridge and Beam | Smart Home Automation</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f4f4f4;
+    }
+    header {
+      background: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header img {
+      width: 350px;
+      max-width: 80%;
+    }
+    nav {
+      background: #333;
+      color: #fff;
       display: flex;
       justify-content: center;
-      align-items: center;
-      height: 100vh;
+      padding: 10px 0;
     }
-    img {
-      max-width: 100%;
-      height: auto;
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+      background: #fff;
+      margin-bottom: 20px;
+    }
+    h2 {
+      text-align: center;
+      margin-top: 0;
+    }
+    #services ul {
+      list-style: none;
+      padding: 0;
+    }
+    #services li {
+      margin-bottom: 10px;
+    }
+    #brands ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    #brands li {
+      margin: 10px 20px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: auto;
+    }
+    label {
+      margin: 10px 0 5px;
+    }
+    input, textarea {
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px;
+      background: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #555;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <img src="./img/bridge_and_beam_web_logo.png" alt="Bridge and Beam Logo">
+  <header id="home">
+    <img src="./img/bridge_and_beam_web_logo.png" alt="Bridge and Beam Logo">
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#brands">Brands</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Bridge and Beam</h2>
+    <p>Bridge and Beam specializes in designing and installing smart home automation solutions. We help homeowners connect lighting, security, entertainment, and comfort systems into a seamless and easy-to-use experience.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Smart lighting and shading control</li>
+      <li>Whole-home audio and video distribution</li>
+      <li>Home theater design and installation</li>
+      <li>Security and surveillance integration</li>
+      <li>Climate and energy management</li>
+    </ul>
+  </section>
+
+  <section id="brands">
+    <h2>Technology Partners</h2>
+    <ul>
+      <li>Control4</li>
+      <li>Crestron</li>
+      <li>Sonos</li>
+      <li>Google Nest</li>
+      <li>Lutron</li>
+      <li>Ring</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Request a Consultation</h2>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2024 Bridge and Beam
+  </footer>
 </body>
 </html>
