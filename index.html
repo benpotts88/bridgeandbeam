@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Smart home & building automation solutions in the North-West UK" />
   <title>Bridge and Beam | Smart Home Automation</title>
   <style>
     body {
@@ -25,6 +26,7 @@
       background: #333;
       color: #fff;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       padding: 10px 0;
     }
@@ -37,16 +39,14 @@
       max-width: none;
       margin: 0;
       padding: 0;
-      height: 50vh;
+      height: 60vh;
       color: #fff;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      background: none;
       background-size: cover;
       background-position: center;
-      background-attachment: fixed;
       margin-bottom: 20px;
     }
     .hero-section .content {
@@ -66,22 +66,14 @@
       text-align: center;
       margin-top: 0;
     }
-    #services ul {
+    #services ul,
+    #solutions ul,
+    #service-plans ul {
       list-style: none;
       padding: 0;
     }
-    #services li {
+    #services li, #solutions li {
       margin-bottom: 10px;
-    }
-    #brands ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    #brands li {
-      margin: 10px 20px;
     }
     form {
       display: flex;
@@ -116,74 +108,101 @@
       font-size: 0.9em;
       color: #777;
     }
+    #cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #222;
+      color: #fff;
+      padding: 15px;
+      display: none;
+    }
+    #cookie-banner button {
+      margin-left: 10px;
+    }
   </style>
 </head>
 <body>
   <header id="home">
     <img src="./img/bridge_and_beam_web_logo.png" alt="Bridge and Beam Logo">
   </header>
-
-  <nav>
+  <nav aria-label="Main navigation">
+    <a href="#solutions">Solutions</a>
+    <a href="#plans">Service Plans</a>
+    <a href="#case-studies">Case Studies</a>
     <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#brands">Brands</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="about" class="hero-section" style="background-image: url('./img/about-hero.svg');">
+  <section class="hero-section" style="background-image: url('./img/about-hero.svg');">
     <div class="content">
-      <h2>About Bridge and Beam</h2>
-      <p>Bridge and Beam specializes in designing and installing smart home automation solutions. We help homeowners connect lighting, security, entertainment, and comfort systems into a seamless and easy-to-use experience.</p>
+      <h1>Smart Automation Experts</h1>
+      <p>Save energy and simplify life with a single trusted integrator.</p>
+      <p><a href="#contact" style="background:#fff;color:#000;padding:10px 20px;border-radius:4px;text-decoration:none;">Book a Free Assessment</a></p>
     </div>
   </section>
 
-  <section id="services" class="hero-section" style="background-image: url('./img/services-hero.svg');">
-    <div class="content">
-      <h2>Our Services</h2>
-      <ul>
-        <li>Smart lighting and shading control</li>
-        <li>Whole-home audio and video distribution</li>
-        <li>Home theater design and installation</li>
-        <li>Security and surveillance integration</li>
-        <li>Climate and energy management</li>
-      </ul>
-    </div>
+  <section id="solutions">
+    <h2>Solutions</h2>
+    <ul>
+      <li>Homeowners &ndash; energy-efficient retrofits</li>
+      <li>Custom luxury homes</li>
+      <li>Landlords & BTR</li>
+      <li>Commercial / public sector</li>
+    </ul>
   </section>
 
-  <section id="brands" class="hero-section" style="background-image: url('./img/brands-hero.svg');">
-    <div class="content">
-      <h2>Technology Partners</h2>
-      <ul>
-        <li>Control4</li>
-        <li>Crestron</li>
-        <li>Sonos</li>
-        <li>Google Nest</li>
-        <li>Lutron</li>
-        <li>Ring</li>
-      </ul>
-    </div>
+  <section id="plans">
+    <h2>Service Plans</h2>
+    <ul>
+      <li>SmartCare Essential</li>
+      <li>SmartCare Plus</li>
+      <li>SmartCare Net-Zero</li>
+    </ul>
   </section>
 
-  <section id="contact" class="hero-section" style="background-image: url('./img/contact-hero.svg');">
-    <div class="content">
-      <h2>Request a Consultation</h2>
-      <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+  <section id="case-studies">
+    <h2>Case Studies</h2>
+    <p>Coming soon &ndash; success stories from our clients.</p>
   </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are a North-West based integrator specialising in Loxone solutions with accredited partners.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form aria-label="Contact form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <div id="cookie-banner" role="dialog" aria-live="polite">
+    This site uses cookies for analytics. <button id="accept-cookies">Accept</button>
+  </div>
 
   <footer>
     &copy; 2024 Bridge and Beam
   </footer>
+  <script>
+    window.addEventListener('load', function () {
+      var banner = document.getElementById('cookie-banner');
+      if (!localStorage.getItem('cookies-accepted')) {
+        banner.style.display = 'block';
+      }
+      document.getElementById('accept-cookies').addEventListener('click', function () {
+        localStorage.setItem('cookies-accepted', 'yes');
+        banner.style.display = 'none';
+      });
+    });
+  </script>
 </body>
 </html>
